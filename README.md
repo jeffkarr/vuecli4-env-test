@@ -7,7 +7,7 @@ test of using process.env with vue cli version 4
         When creating app, I chose to manually select features in order to turn eslint off. 
         I did use the babel compiler. I used npm as package manager. All else turned off.  
 3. Modified App.vue to remove most boilerplate and added a p tag to show an apikey for a test. 
-4. Modified HelloWorld component to indicate app is for env testing. 
+4. Modified HelloWorld component to indicate app is for process.env tests. 
 5. Added new .env file and populated with a dummy apikey. 
     VUE_APP_APIKEY=1234567890
 6. Verified that .gitignore contained .env in it. This will skip pushing the .env file to github. 
@@ -24,5 +24,7 @@ test of using process.env with vue cli version 4
 15. In Heroku, went into settings tab and added the .env apikey to config vars. 
 16. In Heroku, manually deployed github project to Heroku app after entering the config vars. 
 17. Launched Heroku app and verified that apikey was visible, as expected. 
+
+<a href="https://vuecli4-env-test.herokuapp.com">vuecli4-env-test</a>
 
 
